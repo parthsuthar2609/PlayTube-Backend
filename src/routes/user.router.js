@@ -5,7 +5,7 @@ import {upload} from "../middlewares/multer.middleware.js";
 
 const router = Router()
 
-router.route("/register").post(     //For Validation Of The Multer Upload File From user
+router.route("/register").post(     
     upload.fields([
         {
             name : "avatar",
